@@ -1,0 +1,31 @@
+{
+  "name": "blog.danilov.me",
+  "version": "3.0.0",
+  "description": "My blog",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run server & npm run build:watch",
+    "build": "babel-node src",
+    "build:watch": "chokidar templates source src -c 'babel-node src'",
+    "server": "http-server public -p 4242 -o"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-tamia": "^6.8.0",
+    "chokidar-cli": "^1.2.0",
+    "fledermaus": "^5.0.3",
+    "http-server": "^0.9.0"
+  },
+  "author": {
+    "name": "Michael Danilov",
+    "email": "michael@danilov.me",
+    "url": "https://danilov.me/"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/MichaelDanilov/blog.danilov.me",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MichaelDanilov/blog.danilov.me"
+  }
+}
